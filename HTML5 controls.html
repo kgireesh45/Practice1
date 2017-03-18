@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>HTML5 controls</title>
+</head>
+<body>
+<video width="300" height="300" controls>
+	<source src="movie.mp4" type="video/mp4">
+	your browser does not support video tag
+</video>
+<br/>
+
+
+<h1>Scalable Vector Grapics</h1>
+<p>SVG is used to define graphics for the Web</p>
+<br/>
+<svg width="300" height="200">
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+Sorry, your browser does not support inline SVG.
+</svg>
+
+
+<canvas id="myCanvas" width="350" height="100" style="border:1px solid #d3d3d3;"></canvas>
+<script>
+var c = document.getElementById("myCanvas");
+var context = c.getContext("2d"); //allow you to draw things
+context.font = "30px Arial";
+context.fillStyle = "DeepSkyBlue";
+context.fillText("Hey! How are you?",10,50);
+context.strokeText("Hey! How are you?",10,50);
+</script>
+
+<p>Semantic element describes the meaning of the Elements.</p><!--form, Table, article are semantic elements tells something to browser. div,Span elements tells nothing to browser -->
+
+<section>
+	<h1>Section defines a part of document.</h1>
+	<p>A home page could normally be split into sections for introduction, content, and contact information.</p>
+</section>
+<article>
+	<h1>The article element specifies independent, self-contained content.</h1>
+	<p>An article should make sense on its own, and it should be possible to read it independently from the rest of the web site.</p>
+</article>
+
+<form>
+	First Name:
+	<input type="text" name="text">
+	<input type="text" name="text">
+
+
+</form>
+
+</body>
+</html>
